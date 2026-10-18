@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodinný přehled</title>
+<style>
+	body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #222; }
+	h1 { font-size: 1.6rem; }
+	h2 { font-size: 1.2rem; margin-top: 2rem; }
+</style>
+</head>
+<body>
+<h1>Rodinný přehled</h1>
+<p>Soukromý nástroj jedné rodiny. Každé ráno sestaví e-mailový souhrn z rodinných zdrojů, například ze školního systému, kalendářů a tabulky rozvozu dětí. Aplikace není určená pro veřejnost.</p>
+
+<h2 id="soukromi">Zásady ochrany soukromí</h2>
+<ul>
+	<li>Aplikace žádá o jediné oprávnění: <code>https://www.googleapis.com/auth/spreadsheets.readonly</code>. Tabulky Google jen čte, nikdy je nemění.</li>
+	<li>Z tabulky se čte jen rozpis rozvozu dětí. Slouží výhradně k sestavení souhrnu pro rodinu, která si aplikaci spustila.</li>
+	<li>Přístupový token i načtená data zůstávají jen na počítači, na kterém aplikace běží. Nikam se neodesílají, nikomu se neprodávají a nesdílejí se s třetími stranami.</li>
+	<li>Přístup jde kdykoli odvolat na <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+	<li>Využití dat získaných přes Google API se řídí zásadami <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, včetně požadavků Limited Use.</li>
+</ul>
+
+<h2>Kontakt</h2>
+<p>Přes repozitář <a href="https://github.com/PanLuce/rodinny-prehled">github.com/PanLuce/rodinny-prehled</a>.</p>
+</body>
+</html>
